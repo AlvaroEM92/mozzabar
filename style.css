@@ -12,21 +12,23 @@
 .nav{
     background: gray;
     display: flex;
-    width: 100vh;
+    width: 100%;
     height: 10%;
-    justify-content: space-around;
     position: fixed;
     z-index: 3;
+    justify-content: space-around;
 }
 .logocontainer{
 display: flex;
-width: 100px;
-height: 94,5px;
-align-items: center;
+width: 90px;
+height: 64px;
+margin-left: 5px;
+margin-top: 5px;
+
 }
 .logo{
-width: 100px;
-height: 80px;
+width: 90px;
+height: 64px;
 background: white;
 }
 nav ul{
@@ -36,6 +38,7 @@ nav ul{
     width: 400px;
     justify-content: space-around;
     list-style: none;
+    display: none;
 
 }
 ul li a{
@@ -57,8 +60,8 @@ ul li a:hover{
 .intro{
     display:flex;
     flex-direction: column;
-    width: 25%;
-    height: 20%;
+    width: 50%;
+    height: 30%;
     align-items: center;
 }
 .separator{
@@ -86,7 +89,7 @@ ul li a:hover{
     height: 100vh;
     display: flex;
     flex-direction: column;
-    background: url(/assets/mozzarelabar/fondoplantas.jpg) no-repeat;
+    background: url(/assets/mozzarelabar/fondoplantas2.jpg) no-repeat;
     background-size: cover;
     justify-content: center;
     align-items: center;
@@ -96,8 +99,8 @@ ul li a:hover{
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 40%;
-    height: 40%;
+    width: 70%;
+    height: 65%;
     color: white;
     background-color: black;
     justify-content: center;
@@ -120,11 +123,11 @@ padding-bottom: 20px;
     width: 50px;
     height: 50px;
     position: absolute;
-    top: 28%;
-    left: 29%;
+    top: 15%;
+    left: 12%;
 }
 .section3{
-    background: url(/assets/mozzarelabar/galeria.jpg) no-repeat;
+    background: url(/assets/mozzarelabar/section3.webp) no-repeat;
     background-size: cover;
     width: 100vw;
     height: 100vh;
@@ -187,7 +190,7 @@ padding-bottom: 20px;
 }
 .section4{
     background: white;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -197,14 +200,12 @@ padding-bottom: 20px;
 }
 .intromenu{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 40%;
+    width: 100%;
     height: 10%;
-    justify-content: space-around;
-    position: absolute;
     top: 0%;
     right: 29%;
+    justify-content: center;
+    align-items: center;
 }
 .intromenuh1::after, .intromenuh1::before{
     display: inline-block;
@@ -236,10 +237,10 @@ padding-bottom: 20px;
 }
 .menucaja1, .menucaja2{
     width: 35%;
-    height: 650px;
+    height: 80%;
     background: white;
     margin-top: 3%;
-    font-size: 70%;
+    font-size: 30%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding:5% 5% 0 5%;
 }
@@ -256,8 +257,10 @@ padding-bottom: 20px;
     padding: 1%;
 }
 .containeroptionbot{
+    display: flex;
+    justify-content: center;
     margin-top: 3%;
-    width: 18%;
+    width: 100%;
     font-size: 80%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -265,13 +268,13 @@ padding-bottom: 20px;
     text-decoration: none;
     background: rgb(176 131 63) ;
     color: white;
-    padding: 3%;
+    padding: 1%;
 }
 .section5{
 background-image: linear-gradient(
     rgba(0,0,0,0.6),
     rgba(0,0,0,0.6)
-), url(/assets/mozzarelabar/reservas.jpg);
+), url(/assets/mozzarelabar/section5.png);
    background-repeat: no-repeat;
    background-size: cover; 
    width: 100vw;
@@ -286,6 +289,7 @@ background-image: linear-gradient(
     align-items: center;
     justify-content: center;
     color: white;
+    font-size: 70%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .bookings{
@@ -294,7 +298,7 @@ background-image: linear-gradient(
 }
 .bookings::after, .bookings::before{
     display: inline-block;
-    width: 150px;
+    width: 80px;
     border: 2px solid rgb(176 131 63);
     content: "";
     margin: 0px 5px 2px 5px;
@@ -303,10 +307,11 @@ background-image: linear-gradient(
     width: 100%;
     height: 80%;
     display: flex;
+    font-size: 50%;
 }
 .containerformu{
     width: 50%;
-    height: 60%;
+    height: 80%;
     margin-left: 5%;
 }
 .containerformu label, .containerformu p{
@@ -315,12 +320,15 @@ background-image: linear-gradient(
 .formu{
     display: flex;
     flex-direction: column;
-    height: 30%;
+    height: 50%;
+    width: 50%;
+    justify-content: space-evenly;
 }
 .topform{
     display: flex;
     height: 38px;
-    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
 }
 .topform select{
     display: flex;
@@ -344,7 +352,7 @@ background-image: linear-gradient(
 .data{
     width: 50%;
     height: 60%;
-    margin-left: 5%;
+    margin-top: 10%;
 }
 .data h1{
     color:rgb(176 131 63) ;
@@ -374,7 +382,7 @@ background-image: linear-gradient(
 }
 .section6h1::after, .section6h1::before{
     display: inline-block;
-    width: 150px;
+    width: 80px;
     border: 1px solid rgb(35, 139, 110);
     content: "";
     margin: 0px 5px 2px 5px;
@@ -384,6 +392,7 @@ background-image: linear-gradient(
     width: 70% ;
     height: 50%;
     justify-content: space-around;
+    font-size: 75%;
 }
 .containerblog1{
     background: url(/assets/mozzarelabar/blog1.jpg) no-repeat;
@@ -392,8 +401,8 @@ background-image: linear-gradient(
     background-size: cover;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     color: white;
+    justify-content: flex-start;
 }
 .containerblog2{
     background: url(/assets/mozzarelabar/blog2.jpg) no-repeat;
@@ -401,9 +410,9 @@ background-image: linear-gradient(
     height: 70%;
     background-size: cover;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: column;;
     color: white;
+    justify-content: flex-start;
 }
 .containerblog3{
     background: url(/assets/mozzarelabar/blog3.jpg) no-repeat;
@@ -412,8 +421,8 @@ background-image: linear-gradient(
     background-size: cover;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     color: white;
+    justify-content: flex-start;
 }
 .containertickets{
     width: 100%;
@@ -437,7 +446,7 @@ background-image: linear-gradient(
     background-image: linear-gradient(
     rgba(0,0,0,0.5),
     rgba(0,0,0,0.5)
-), url(/assets/mozzarelabar/tarta.jpg);
+), url(/assets/mozzarelabar/footer1.jpg);
     background-size: cover;
     width: 100%;
     height: 30%;
@@ -445,28 +454,29 @@ background-image: linear-gradient(
     flex-direction: column;
     align-items: center;
     position: relative;
+    justify-content: space-around;
 }
 .logomap{
     background-color: gold;
     position: absolute;
     bottom: 25%;
-    left: 40%;
-    width: 30px;
-    height: 30px;
+    left: 20%;
+    width: 25px;
+    height: 25px;
 }
 .logomovil{
     bottom: 25%;
-    right: 45%;
-    width: 30px;
-    height: 30px;
+    right: 38%;
+    width: 25px;
+    height: 25px;
     position: absolute;
     background-color: gold;
 }
 .logomessage{
     bottom: 25%;
-    left: 62%;
-    width: 30px;
-    height: 30px;
+    left: 80%;
+    width: 25px;
+    height: 25px;
     position: absolute;
     background-color: gold;
 }
@@ -474,6 +484,7 @@ background-image: linear-gradient(
     margin-top: 3%;
     width: 15%;
     height: 20%;
+    background-color: grey;
 }
 .footer1 p{
     color: white;
@@ -483,7 +494,7 @@ background-image: linear-gradient(
 }
 .iconsfoot{
     display: flex;
-    margin-top: 10%;
+
 }
 .footer2{
     width: 100%;
@@ -495,16 +506,20 @@ background-image: linear-gradient(
 }
 .footer h1::after, .footer h1::before{
     display: inline-block;
-    width: 150px;
+    width: 75px;
     border: 1px solid rgb(35, 139, 110);
     content: "";
-    margin: 0px 5px 10px 5px;
+    margin: 0px 5px 5px 5px;
+}
+.footer h1{
+    font-size: 80%;
 }
 .footer2 a{
     text-decoration: none;
     color: black;
     border: 1px black solid;
     padding: 1%;
+    font-size: 85%;
 }
 .social{
     display: flex;
@@ -527,6 +542,7 @@ background-image: linear-gradient(
     width: 100%;
     height: 80%;
     text-align: left;
+    font-size: 70%;
 }
 .iconsocial{
     width: 100%;
@@ -548,5 +564,1766 @@ background-image: linear-gradient(
     margin-right:25%;
 }
 .logofacebook{
-    margin-left: 40%;
+    margin-left: 20%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 576px) {
+    *{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .section1{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .nav{
+        background: gray;
+        display: flex;
+        width: 100%;
+        height: 10%;
+        justify-content: space-around;
+        position: fixed;
+        z-index: 3;
+    }
+    .logoburguer{
+        display: none;
+    }
+    .logocontainer{
+    display: flex;
+    width: 100px;
+    height: 94,5px;
+    align-items: center;
+    }
+    .logo{
+    width: 100px;
+    height: 80px;
+    background: white;
+    }
+    nav ul{
+        display: flex;
+        height: 94,5;
+        align-items: center;
+        width: 400px;
+        justify-content: space-around;
+        list-style: none;
+    
+    }
+    ul li a{
+        color: white;
+        text-decoration: none;
+    }
+    ul li a:hover{
+        text-decoration:underline orange;
+    }
+    .header{
+        display: flex;
+        width: 100%;
+        height: 90%;
+        background: url(/assets/mozzarelabar/intro.webp) no-repeat;
+        background-size: cover;
+        justify-content: center;
+        align-items: center;
+    }
+    .intro{
+        display:flex;
+        flex-direction: column;
+        width: 25%;
+        height: 20%;
+        align-items: center;
+    }
+    .separator{
+        width:80% ;
+        height: 30%;
+    }
+    @font-face {
+        font-family: MissFajardose;
+        src: url(/assets/MissFajardose-Regular.ttf);
+    }
+    .descubre{
+        color:rgb(176 131 63) ;
+        font-family: MissFajardose ;
+        font-size: 50px;
+    }
+    .mozzabar{
+        color: white;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .weareopen{
+        color: white;
+    }
+    .section2{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background: url(/assets/mozzarelabar/fondoplantas2.jpg) no-repeat;
+        background-size: cover;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    .containerconcept{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 50%;
+        height: 50%;
+        color: white;
+        background-color: black;
+        justify-content: center;
+    }
+    .tittleconcept{
+    padding-bottom: 20px;
+    }
+    .tittleconcept::after, .tittleconcept::before{
+        display: inline-block;
+        width: 50px;
+        border: 1px solid white;
+        content: "";
+        margin: 0 5px 5px 5px;
+    }
+    .containerlettuce{
+        width: 50px;
+        height: 50px;
+    }
+    .letucce{
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 22%;
+        left: 22%;
+    }
+    .section3{
+        background: url(/assets/mozzarelabar/section3.webp) no-repeat;
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content:center;
+    }
+    .column1{
+        width: 30%;
+        height: 65%;
+        padding-top: 3%;
+        padding-left: 1%;
+    }
+    .column2{
+        width: 18%;
+        height: 65%;
+        padding-top: 3%;
+    }
+    .column3{
+        width: 30%;
+        height: 65%;
+        padding-top: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding-right: 1%;
+    
+    }
+    .galery1{
+        width: 60%;
+        height: 20%;
+    }
+    .galery2{
+        width: 60%;
+        height: 35%;
+        margin-top: 2%;
+    }
+    .galery3{
+        width: 100%;
+        height: 23%;
+    }
+    .galery4{
+        width: 100%;
+        height: 20%;
+        margin-top: 3%;
+    }
+    .galery5{
+        width: 100%;
+        height: 20%;
+        margin-top: 3%;
+    }
+    .galery6{
+        width: 63%;
+        height: 21%;
+    }
+    .galery7{
+        width: 63%;
+        height: 35%;
+        margin-top: 3%;
+    }
+    .section4{
+        background: white;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+    }
+    .intromenu{
+        display: flex;
+        width: 100%;
+        height: 10%;
+        top: 0%;
+        right: 29%;
+        justify-content: center;
+        align-items: center;
+    }
+    .intromenuh1::after, .intromenuh1::before{
+        display: inline-block;
+        width: 120px;
+        border: 1px solid black;
+        content: "";
+        margin: 0 5px 5px 5px;
+    }
+    .intromenuoptions{
+        display: flex;
+    }
+    .options{
+        margin-right: 3%;
+        margin-bottom: 3%;
+    }
+    .options a {
+        text-decoration: none;
+        color: black;
+    }
+    .options a:hover{
+        text-decoration: 3px underline orange;
+    }
+    .menu{
+        background: url(/assets/mozzarelabar/carta.jpg);
+        width: 75%;
+        height: 75%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .menucaja1, .menucaja2{
+        width: 35%;
+        height: 600px;
+        background: white;
+        margin-top: 3%;
+        font-size: 55%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        padding:5% 5% 0 5%;
+    }
+    .menucaja1{
+        margin-left: 3%;
+    }
+    .menucaja2{
+        margin-right: 3%;
+    }
+    .menucaja1 .menu-title, .menucaja2 .menu-title{
+        text-align: left;
+    }
+    .menu-item, .prices, .menu-title{
+        padding: 1%;
+    }
+    .containeroptionbot{
+        display: flex;
+        justify-content: center;
+        margin-top: 3%;
+        width: 100%;
+        font-size: 80%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .optionbot{
+        text-decoration: none;
+        background: rgb(176 131 63) ;
+        color: white;
+        padding: 1%;
+    }
+    .section5{
+    background-image: linear-gradient(
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.6)
+    ), url(/assets/mozzarelabar/section5.png);
+       background-repeat: no-repeat;
+       background-size: cover; 
+       width: 100vw;
+       height: 100vh;
+       display: flex;
+       flex-direction: column;
+    }
+    .containerbookings{
+        display: flex;
+        width: 100%;
+        height: 10%;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .bookings{
+        display: flex;
+        height: 50%;
+    }
+    .bookings::after, .bookings::before{
+        display: inline-block;
+        width: 150px;
+        border: 2px solid rgb(176 131 63);
+        content: "";
+        margin: 0px 5px 2px 5px;
+    }
+    .dataform{
+        width: 100%;
+        height: 80%;
+        display: flex;
+    }
+    .containerformu{
+        width: 50%;
+        height: 60%;
+        margin-left: 5%;
+    }
+    .containerformu label, .containerformu p{
+        color: white;
+    }
+    .formu{
+        display: flex;
+        flex-direction: column;
+        height: 30%;
+    }
+    .topform{
+        display: flex;
+        height: 38px;
+        justify-content: space-between;
+    }
+    .topform select{
+        display: flex;
+        flex-direction: column;
+    }
+    .containerformu input{
+        margin-top:7%;
+    }
+    .containerbutton1, .containerbutton2{
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+        background: white;
+        border: 1px black ;
+        margin-top: 1%;
+    }
+    .button1, .button2{
+        text-decoration: none;
+        color: black;
+    }
+    .data{
+        width: 50%;
+        height: 60%;
+        margin-left: 5%;
+    }
+    .data h1{
+        color:rgb(176 131 63) ;
+    }
+    .data h2{
+        height: 10%;
+        color: white;
+        text-decoration: underline 1px;
+    }
+    .data p{
+        width: 40%;
+        color: white;
+    }
+    .section6{
+        background-color: white;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .section6h1{
+        height: 10%;
+        display: flex;
+        align-items: center;
+        font-size: 70%;
+    }
+    .section6h1::after, .section6h1::before{
+        display: inline-block;
+        width: 150px;
+        border: 1px solid rgb(35, 139, 110);
+        content: "";
+        margin: 0px 5px 2px 5px;
+    }
+    .containerbl{
+        display: flex;
+        width: 70% ;
+        height: 50%;
+        justify-content: space-around;
+    }
+    .containerblog1{
+        background: url(/assets/mozzarelabar/blog1.jpg) no-repeat;
+        width: 30%;
+        height: 70%;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+    }
+    .containerblog2{
+        background: url(/assets/mozzarelabar/blog2.jpg) no-repeat;
+        width: 30%;
+        height: 70%;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+    }
+    .containerblog3{
+        background: url(/assets/mozzarelabar/blog3.jpg) no-repeat;
+        width: 30%;
+        height: 70%;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+    }
+    .containertickets{
+        width: 100%;
+        font-size: 80%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+    }
+    .tickets{
+        text-decoration: none;
+        background: rgb(176 131 63) ;
+        color: white;
+        height: 70%;
+        padding: 5px;
+    }
+    .footer{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer1{
+        background-image: linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url(/assets/mozzarelabar/footer1.jpg);
+        background-size: cover;
+        width: 100%;
+        height: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+    .logomap{
+        background-color: gold;
+        position: absolute;
+        bottom: 45%;
+        left: 30%;
+        width: 30px;
+        height: 30px;
+    }
+    .logomovil{
+        bottom: 45%;
+        right: 43%;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        background-color: gold;
+    }
+    .logomessage{
+        bottom: 45%;
+        left: 65%;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        background-color: gold;
+    }
+    .footer1 .logo2{
+        margin-top: 3%;
+        width: 15%;
+        height: 20%;
+    }
+    .footer1 p{
+        color: white;
+        font-size: 80%;
+        margin-top: 2%;
+        margin-right: 3%;
+    }
+    .iconsfoot{
+        display: flex;
+        margin-top: 10%;
+    }
+    .footer2{
+        width: 100%;
+        height: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .footer h1::after, .footer h1::before{
+        display: inline-block;
+        width: 150px;
+        border: 1px solid rgb(35, 139, 110);
+        content: "";
+        margin: 0px 5px 10px 5px;
+    }
+    .footer2 a{
+        text-decoration: none;
+        color: black;
+        border: 1px black solid;
+        padding: 1%;
+    }
+    .social{
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    .footer3{
+        width: 100%;
+        height: 30%;
+        background-color: gray;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .tablefoot{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 80%;
+        text-align: left;
+    }
+    .iconsocial{
+        width: 100%;
+        height: 20%;
+        display: flex;
+        font-size: 60%;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+    .copyright{
+        margin-bottom: 2%;
+    }
+    .logofacebook, .logoinstagram{
+        margin-bottom: 2%;
+        width: 15px;
+        height: 15px;
+    }
+    .logoinstagram{
+        margin-right:25%;
+    }
+    .logofacebook{
+        margin-left: 40%;
+    }
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ @media (min-width: 768px) {
+    *{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .section1{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .nav{
+        background: gray;
+        display: flex;
+        width: 100%;
+        height: 10%;
+        justify-content: space-around;
+        position: fixed;
+        z-index: 3;
+    }
+    .logoburguer{
+        display: none;
+    }
+    .logocontainer{
+    display: flex;
+    width: 100px;
+    height: 94,5px;
+    align-items: center;
+    }
+    .logo{
+    width: 100px;
+    height: 80px;
+    background: white;
+    }
+    nav ul{
+        display: flex;
+        height: 94,5;
+        align-items: center;
+        width: 400px;
+        justify-content: space-around;
+        list-style: none;
+    
+    }
+    ul li a{
+        color: white;
+        text-decoration: none;
+    }
+    ul li a:hover{
+        text-decoration:underline orange;
+    }
+    .header{
+        display: flex;
+        width: 100%;
+        height: 90%;
+        background: url(/assets/mozzarelabar/intro.webp) no-repeat;
+        background-size: cover;
+        justify-content: center;
+        align-items: center;
+    }
+    .intro{
+        display:flex;
+        flex-direction: column;
+        width: 25%;
+        height: 20%;
+        align-items: center;
+    }
+    .separator{
+        width:80% ;
+        height: 30%;
+    }
+    @font-face {
+        font-family: MissFajardose;
+        src: url(/assets/MissFajardose-Regular.ttf);
+    }
+    .descubre{
+        color:rgb(176 131 63) ;
+        font-family: MissFajardose ;
+        font-size: 50px;
+    }
+    .mozzabar{
+        color: white;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .weareopen{
+        color: white;
+    }
+    .section2{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background: url(/assets/mozzarelabar/fondoplantas2.jpg) no-repeat;
+        background-size: cover;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    .containerconcept{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 40%;
+        height: 40%;
+        color: white;
+        background-color: black;
+        justify-content: center;
+    }
+    .tittleconcept{
+    padding-bottom: 20px;
+    }
+    .tittleconcept::after, .tittleconcept::before{
+        display: inline-block;
+        width: 50px;
+        border: 1px solid white;
+        content: "";
+        margin: 0 5px 5px 5px;
+    }
+    .containerlettuce{
+        width: 50px;
+        height: 50px;
+    }
+    .letucce{
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 28%;
+        left: 29%;
+    }
+    .section3{
+        background: url(/assets/mozzarelabar/section3.webp) no-repeat;
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content:center;
+    }
+    .column1{
+        width: 30%;
+        height: 65%;
+        padding-top: 3%;
+        padding-left: 1%;
+    }
+    .column2{
+        width: 18%;
+        height: 65%;
+        padding-top: 3%;
+    }
+    .column3{
+        width: 30%;
+        height: 65%;
+        padding-top: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding-right: 1%;
+    
+    }
+    .galery1{
+        width: 60%;
+        height: 20%;
+    }
+    .galery2{
+        width: 60%;
+        height: 35%;
+        margin-top: 2%;
+    }
+    .galery3{
+        width: 100%;
+        height: 23%;
+    }
+    .galery4{
+        width: 100%;
+        height: 20%;
+        margin-top: 3%;
+    }
+    .galery5{
+        width: 100%;
+        height: 20%;
+        margin-top: 3%;
+    }
+    .galery6{
+        width: 63%;
+        height: 21%;
+    }
+    .galery7{
+        width: 63%;
+        height: 35%;
+        margin-top: 3%;
+    }
+    .section4{
+        background: white;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+    }
+    .intromenu{
+        display: flex;
+        width: 100%;
+        height: 10%;
+        top: 0%;
+        right: 29%;
+        justify-content: center;
+        align-items: center;
+    }
+    .intromenuh1::after, .intromenuh1::before{
+        display: inline-block;
+        width: 120px;
+        border: 1px solid black;
+        content: "";
+        margin: 0 5px 5px 5px;
+    }
+    .intromenuoptions{
+        display: flex;
+    }
+    .options{
+        margin-right: 3%;
+        margin-bottom: 3%;
+    }
+    .options a {
+        text-decoration: none;
+        color: black;
+    }
+    .options a:hover{
+        text-decoration: 3px underline orange;
+    }
+    .menu{
+        background: url(/assets/mozzarelabar/carta.jpg);
+        width: 75%;
+        height: 75%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .menucaja1, .menucaja2{
+        width: 35%;
+        height: 600px;
+        background: white;
+        margin-top: 3%;
+        font-size: 60%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        padding:5% 5% 0 5%;
+    }
+    .menucaja1{
+        margin-left: 3%;
+    }
+    .menucaja2{
+        margin-right: 3%;
+    }
+    .menucaja1 .menu-title, .menucaja2 .menu-title{
+        text-align: left;
+    }
+    .menu-item, .prices, .menu-title{
+        padding: 1%;
+    }
+    .containeroptionbot{
+        display: flex;
+        justify-content: center;
+        margin-top: 3%;
+        width: 100%;
+        font-size: 80%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .optionbot{
+        text-decoration: none;
+        background: rgb(176 131 63) ;
+        color: white;
+        padding: 1%;
+    }
+    .section5{
+    background-image: linear-gradient(
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.6)
+    ), url(/assets/mozzarelabar/section5.png);
+       background-repeat: no-repeat;
+       background-size: cover; 
+       width: 100vw;
+       height: 100vh;
+       display: flex;
+       flex-direction: column;
+    }
+    .containerbookings{
+        display: flex;
+        width: 100%;
+        height: 10%;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .bookings{
+        display: flex;
+        height: 50%;
+    }
+    .bookings::after, .bookings::before{
+        display: inline-block;
+        width: 150px;
+        border: 2px solid rgb(176 131 63);
+        content: "";
+        margin: 0px 5px 2px 5px;
+    }
+    .dataform{
+        width: 100%;
+        height: 80%;
+        display: flex;
+    }
+    .containerformu{
+        width: 50%;
+        height: 60%;
+        margin-left: 5%;
+    }
+    .containerformu label, .containerformu p{
+        color: white;
+    }
+    .formu{
+        display: flex;
+        flex-direction: column;
+        height: 30%;
+    }
+    .topform{
+        display: flex;
+        height: 38px;
+        justify-content: space-between;
+    }
+    .topform select{
+        display: flex;
+        flex-direction: column;
+    }
+    .containerformu input{
+        margin-top:7%;
+    }
+    .containerbutton1, .containerbutton2{
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+        background: white;
+        border: 1px black ;
+        margin-top: 1%;
+    }
+    .button1, .button2{
+        text-decoration: none;
+        color: black;
+    }
+    .data{
+        width: 50%;
+        height: 60%;
+        margin-left: 5%;
+    }
+    .data h1{
+        color:rgb(176 131 63) ;
+    }
+    .data h2{
+        height: 10%;
+        color: white;
+        text-decoration: underline 1px;
+    }
+    .data p{
+        width: 40%;
+        color: white;
+    }
+    .section6{
+        background-color: white;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .section6h1{
+        height: 10%;
+        display: flex;
+        align-items: center;
+        font-size: 70%;
+    }
+    .section6h1::after, .section6h1::before{
+        display: inline-block;
+        width: 150px;
+        border: 1px solid rgb(35, 139, 110);
+        content: "";
+        margin: 0px 5px 2px 5px;
+    }
+    .containerbl{
+        display: flex;
+        width: 70% ;
+        height: 50%;
+        justify-content: space-around;
+    }
+    .containerblog1{
+        background: url(/assets/mozzarelabar/blog1.jpg) no-repeat;
+        width: 30%;
+        height: 70%;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+    }
+    .containerblog2{
+        background: url(/assets/mozzarelabar/blog2.jpg) no-repeat;
+        width: 30%;
+        height: 70%;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+    }
+    .containerblog3{
+        background: url(/assets/mozzarelabar/blog3.jpg) no-repeat;
+        width: 30%;
+        height: 70%;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+    }
+    .containertickets{
+        width: 100%;
+        font-size: 80%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+    }
+    .tickets{
+        text-decoration: none;
+        background: rgb(176 131 63) ;
+        color: white;
+        height: 70%;
+        padding: 5px;
+    }
+    .footer{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer1{
+        background-image: linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url(/assets/mozzarelabar/footer1.jpg);
+        background-size: cover;
+        width: 100%;
+        height: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+    .logomap{
+        background-color: gold;
+        position: absolute;
+        bottom: 35%;
+        left: 35%;
+        width: 30px;
+        height: 30px;
+    }
+    .logomovil{
+        bottom: 35%;
+        right: 45%;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        background-color: gold;
+    }
+    .logomessage{
+        bottom: 35%;
+        left: 62%;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        background-color: gold;
+    }
+    .footer1 .logo2{
+        margin-top: 3%;
+        width: 15%;
+        height: 20%;
+    }
+    .footer1 p{
+        color: white;
+        font-size: 80%;
+        margin-top: 2%;
+        margin-right: 3%;
+    }
+    .iconsfoot{
+        display: flex;
+        margin-top: 10%;
+    }
+    .footer2{
+        width: 100%;
+        height: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .footer h1::after, .footer h1::before{
+        display: inline-block;
+        width: 150px;
+        border: 1px solid rgb(35, 139, 110);
+        content: "";
+        margin: 0px 5px 10px 5px;
+    }
+    .footer2 a{
+        text-decoration: none;
+        color: black;
+        border: 1px black solid;
+        padding: 1%;
+    }
+    .social{
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    .footer3{
+        width: 100%;
+        height: 30%;
+        background-color: gray;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .tablefoot{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 80%;
+        text-align: left;
+    }
+    .iconsocial{
+        width: 100%;
+        height: 20%;
+        display: flex;
+        font-size: 60%;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+    .copyright{
+        margin-bottom: 2%;
+    }
+    .logofacebook, .logoinstagram{
+        margin-bottom: 2%;
+        width: 15px;
+        height: 15px;
+    }
+    .logoinstagram{
+        margin-right:25%;
+    }
+    .logofacebook{
+        margin-left: 40%;
+    }
+    
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ @media (min-width: 992px) {
+    *{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .section1{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .nav{
+        background: gray;
+        display: flex;
+        width: 100%;
+        height: 10%;
+        justify-content: space-around;
+        position: fixed;
+        z-index: 3;
+    }
+    .logoburguer{
+        display: none;
+    }
+    .logocontainer{
+    display: flex;
+    width: 100px;
+    height: 94,5px;
+    align-items: center;
+    }
+    .logo{
+    width: 100px;
+    height: 80px;
+    background: white;
+    }
+    nav ul{
+        display: flex;
+        height: 94,5;
+        align-items: center;
+        width: 400px;
+        justify-content: space-around;
+        list-style: none;
+    
+    }
+    ul li a{
+        color: white;
+        text-decoration: none;
+    }
+    ul li a:hover{
+        text-decoration:underline orange;
+    }
+    .header{
+        display: flex;
+        width: 100%;
+        height: 90%;
+        background: url(/assets/mozzarelabar/intro.webp) no-repeat;
+        background-size: cover;
+        justify-content: center;
+        align-items: center;
+    }
+    .intro{
+        display:flex;
+        flex-direction: column;
+        width: 25%;
+        height: 20%;
+        align-items: center;
+    }
+    .separator{
+        width:80% ;
+        height: 30%;
+    }
+    @font-face {
+        font-family: MissFajardose;
+        src: url(/assets/MissFajardose-Regular.ttf);
+    }
+    .descubre{
+        color:rgb(176 131 63) ;
+        font-family: MissFajardose ;
+        font-size: 50px;
+    }
+    .mozzabar{
+        color: white;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .weareopen{
+        color: white;
+    }
+    .section2{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background: url(/assets/mozzarelabar/fondoplantas2.jpg) no-repeat;
+        background-size: cover;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    .containerconcept{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 40%;
+        height: 40%;
+        color: white;
+        background-color: black;
+        justify-content: center;
+    }
+    .tittleconcept{
+    padding-bottom: 20px;
+    }
+    .tittleconcept::after, .tittleconcept::before{
+        display: inline-block;
+        width: 50px;
+        border: 1px solid white;
+        content: "";
+        margin: 0 5px 5px 5px;
+    }
+    .containerlettuce{
+        width: 50px;
+        height: 50px;
+    }
+    .letucce{
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 28%;
+        left: 29%;
+    }
+    .section3{
+        background: url(/assets/mozzarelabar/section3.webp) no-repeat;
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content:center;
+    }
+    .column1{
+        width: 30%;
+        height: 65%;
+        padding-top: 3%;
+        padding-left: 1%;
+    }
+    .column2{
+        width: 18%;
+        height: 65%;
+        padding-top: 3%;
+    }
+    .column3{
+        width: 30%;
+        height: 65%;
+        padding-top: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding-right: 1%;
+    
+    }
+    .galery1{
+        width: 60%;
+        height: 20%;
+    }
+    .galery2{
+        width: 60%;
+        height: 35%;
+        margin-top: 2%;
+    }
+    .galery3{
+        width: 100%;
+        height: 23%;
+    }
+    .galery4{
+        width: 100%;
+        height: 20%;
+        margin-top: 3%;
+    }
+    .galery5{
+        width: 100%;
+        height: 20%;
+        margin-top: 3%;
+    }
+    .galery6{
+        width: 63%;
+        height: 21%;
+    }
+    .galery7{
+        width: 63%;
+        height: 35%;
+        margin-top: 3%;
+    }
+    .section4{
+        background: white;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+    }
+    .intromenu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 40%;
+        height: 10%;
+        justify-content: space-around;
+        position: absolute;
+        top: 0%;
+        right: 29%;
+    }
+    .intromenuh1::after, .intromenuh1::before{
+        display: inline-block;
+        width: 120px;
+        border: 1px solid black;
+        content: "";
+        margin: 0 5px 5px 5px;
+    }
+    .intromenuoptions{
+        display: flex;
+    }
+    .options{
+        margin-right: 3%;
+        margin-bottom: 3%;
+    }
+    .options a {
+        text-decoration: none;
+        color: black;
+    }
+    .options a:hover{
+        text-decoration: 3px underline orange;
+    }
+    .menu{
+        background: url(/assets/mozzarelabar/carta.jpg);
+        width: 75%;
+        height: 75%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .menucaja1, .menucaja2{
+        width: 35%;
+        height: 650px;
+        background: white;
+        margin-top: 3%;
+        font-size: 70%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        padding:5% 5% 0 5%;
+    }
+    .menucaja1{
+        margin-left: 3%;
+    }
+    .menucaja2{
+        margin-right: 3%;
+    }
+    .menucaja1 .menu-title, .menucaja2 .menu-title{
+        text-align: left;
+    }
+    .menu-item, .prices, .menu-title{
+        padding: 1%;
+    }
+    .containeroptionbot{
+        margin-top: 3%;
+        width: 18%;
+        font-size: 80%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .optionbot{
+        text-decoration: none;
+        background: rgb(176 131 63) ;
+        color: white;
+        padding: 3%;
+    }
+    .section5{
+    background-image: linear-gradient(
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.6)
+    ), url(/assets/mozzarelabar/section5.png);
+       background-repeat: no-repeat;
+       background-size: cover; 
+       width: 100vw;
+       height: 100vh;
+       display: flex;
+       flex-direction: column;
+    }
+    .containerbookings{
+        display: flex;
+        width: 100%;
+        height: 10%;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .bookings{
+        display: flex;
+        height: 50%;
+    }
+    .bookings::after, .bookings::before{
+        display: inline-block;
+        width: 150px;
+        border: 2px solid rgb(176 131 63);
+        content: "";
+        margin: 0px 5px 2px 5px;
+    }
+    .dataform{
+        width: 100%;
+        height: 80%;
+        display: flex;
+    }
+    .containerformu{
+        width: 50%;
+        height: 60%;
+        margin-left: 5%;
+    }
+    .containerformu label, .containerformu p{
+        color: white;
+    }
+    .formu{
+        display: flex;
+        flex-direction: column;
+        height: 30%;
+    }
+    .topform{
+        display: flex;
+        height: 38px;
+        justify-content: space-between;
+    }
+    .topform select{
+        display: flex;
+        flex-direction: column;
+    }
+    .containerformu input{
+        margin-top:7%;
+    }
+    .containerbutton1, .containerbutton2{
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+        background: white;
+        border: 1px black ;
+        margin-top: 1%;
+    }
+    .button1, .button2{
+        text-decoration: none;
+        color: black;
+    }
+    .data{
+        width: 50%;
+        height: 60%;
+        margin-left: 5%;
+    }
+    .data h1{
+        color:rgb(176 131 63) ;
+    }
+    .data h2{
+        height: 10%;
+        color: white;
+        text-decoration: underline 1px;
+    }
+    .data p{
+        width: 40%;
+        color: white;
+    }
+    .section6{
+        background-color: white;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .section6h1{
+        height: 10%;
+        display: flex;
+        align-items: center;
+        font-size: 70%;
+    }
+    .section6h1::after, .section6h1::before{
+        display: inline-block;
+        width: 150px;
+        border: 1px solid rgb(35, 139, 110);
+        content: "";
+        margin: 0px 5px 2px 5px;
+    }
+    .containerbl{
+        display: flex;
+        width: 70% ;
+        height: 50%;
+        justify-content: space-around;
+    }
+    .containerblog1{
+        background: url(/assets/mozzarelabar/blog1.jpg) no-repeat;
+        width: 30%;
+        height: 70%;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+    }
+    .containerblog2{
+        background: url(/assets/mozzarelabar/blog2.jpg) no-repeat;
+        width: 30%;
+        height: 70%;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+    }
+    .containerblog3{
+        background: url(/assets/mozzarelabar/blog3.jpg) no-repeat;
+        width: 30%;
+        height: 70%;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+    }
+    .containertickets{
+        width: 100%;
+        font-size: 80%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+    }
+    .tickets{
+        text-decoration: none;
+        background: rgb(176 131 63) ;
+        color: white;
+        height: 70%;
+        padding: 5px;
+    }
+    .footer{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer1{
+        background-image: linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url(/assets/mozzarelabar/footer1.jpg);
+        background-size: cover;
+        width: 100%;
+        height: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+    .logomap{
+        background-color: gold;
+        position: absolute;
+        bottom: 25%;
+        left: 40%;
+        width: 30px;
+        height: 30px;
+    }
+    .logomovil{
+        bottom: 25%;
+        right: 45%;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        background-color: gold;
+    }
+    .logomessage{
+        bottom: 25%;
+        left: 62%;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        background-color: gold;
+    }
+    .footer1 .logo2{
+        margin-top: 3%;
+        width: 15%;
+        height: 20%;
+    }
+    .footer1 p{
+        color: white;
+        font-size: 80%;
+        margin-top: 2%;
+        margin-right: 3%;
+    }
+    .iconsfoot{
+        display: flex;
+        margin-top: 10%;
+    }
+    .footer2{
+        width: 100%;
+        height: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .footer h1::after, .footer h1::before{
+        display: inline-block;
+        width: 150px;
+        border: 1px solid rgb(35, 139, 110);
+        content: "";
+        margin: 0px 5px 10px 5px;
+    }
+    .footer2 a{
+        text-decoration: none;
+        color: black;
+        border: 1px black solid;
+        padding: 1%;
+    }
+    .social{
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    .footer3{
+        width: 100%;
+        height: 30%;
+        background-color: gray;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .tablefoot{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 80%;
+        text-align: left;
+    }
+    .iconsocial{
+        width: 100%;
+        height: 20%;
+        display: flex;
+        font-size: 60%;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+    .copyright{
+        margin-bottom: 2%;
+    }
+    .logofacebook, .logoinstagram{
+        margin-bottom: 2%;
+        width: 15px;
+        height: 15px;
+    }
+    .logoinstagram{
+        margin-right:25%;
+    }
+    .logofacebook{
+        margin-left: 40%;
+    }
+ }
+ @media (min-width: 1200px) {
+ }
